@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<hrml>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                margin: 0;
+                width:100%;
+                height:100%;
+            }
+            .container {
+                display:grid;
+                grid-template-columns:auto;
+                grid-template-rows:auto 1fr auto ;
+                grid-template-areas:
+                    "header"
+                    "content"
+                    "footer";
+                    
+            }
+            .header{background-color:#abc;}
+            .content{background-color:#bcd;overflow: auto;}
+            .footer{background-color:#abc;}
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                test
+            </div>
+            <div class="content">
+                test0<br>test<br>test<br>test<br>
+                test<br>test<br>test<br>test<br>
+                test<br>test<br>test<br>test<br>
+                test<br>test<br>test<br>test<br>
+                test<br>test<br>test<br>test<br>
+                test<br>test<br>test<br>test<br>
+                test<br>test<br>test<br>test<br>
+                test<br>test<br>test<br>test1<br>
+            </div>
+            <div class="footer">
+                test
+            </div>
+        </div>
+    </body>
+</html>
